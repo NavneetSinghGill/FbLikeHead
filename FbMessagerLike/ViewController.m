@@ -10,7 +10,8 @@
 
 typedef enum {
     InArea = 0,
-    OutOfArea
+    OutOfArea,
+    Dead
 } ChatCicleState;
 
 #define AreaRadius 150
@@ -119,6 +120,7 @@ typedef enum {
                     _chatButton.center = CGPointMake(hidingPoint.x, hidingPoint.y);
                 }];
             }
+            chatCicleState = Dead;
             NSLog(@"ENDED in circle");
         }
     }
@@ -128,6 +130,11 @@ typedef enum {
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
+    CGPoint pointInMainView = [touch locationInView:self.view];
+    if (chatCicleState == Dead) {
+        _chatButton.center = pointInMainView;
+    }
+    
     CGPoint pointInView = [touch locationInView:_chatButton];
     NSLog(@"TOUCH BEGAN: %f %f", pointInView.x, pointInView.y);
     
