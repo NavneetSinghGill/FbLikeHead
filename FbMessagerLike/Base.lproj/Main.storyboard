@@ -48,6 +48,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Roulette View Controller-->
+        <scene sceneID="oeq-5z-7Tx">
+            <objects>
+                <viewController id="KTS-Ja-8h3" customClass="RouletteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z09-vU-adE"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ip-if-eZX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AZW-dx-s0P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUM-8y-Pk2" customClass="RouletteWheel">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ceA-Wb-uDv"/>
+                                    <constraint firstAttribute="height" constant="200" id="soe-Cz-BYO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VUM-8y-Pk2" firstAttribute="centerX" secondItem="AZW-dx-s0P" secondAttribute="centerX" id="NOU-Zw-qWd"/>
+                            <constraint firstItem="VUM-8y-Pk2" firstAttribute="centerY" secondItem="AZW-dx-s0P" secondAttribute="centerY" id="sCt-Ue-MV1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rouletteWheel" destination="VUM-8y-Pk2" id="ZWS-zH-bkf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfj-HI-21q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="123"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cross" width="43" height="43"/>

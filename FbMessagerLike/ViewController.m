@@ -55,8 +55,6 @@ typedef enum {
     });
 }
 
-
-
 - (void)didMove:(UIGestureRecognizer *)gestureRecognizer {
     CGPoint pointInView = [gestureRecognizer locationInView:self.view];
     if ([self isFocusOfPoint:pointInView isInView:_chatButton] || ((_chatButton.center.x == _crossImageView.center.x) && (_chatButton.center.y == _crossImageView.center.y)) || chatCicleState == InArea) {

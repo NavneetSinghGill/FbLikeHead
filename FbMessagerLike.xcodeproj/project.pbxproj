@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C1DB1441E1FC41300971D0A /* RouletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DB1431E1FC41300971D0A /* RouletteViewController.m */; };
+		5C1DB14A1E1FC4E100971D0A /* RouletteWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1DB1491E1FC4E100971D0A /* RouletteWheel.m */; };
+		5C6855381E26470C0089DDA3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C6855371E26470C0089DDA3 /* NotificationCenter.framework */; };
+		5C68553C1E26470C0089DDA3 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C68553B1E26470C0089DDA3 /* TodayViewController.m */; };
+		5C68553F1E26470C0089DDA3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C68553D1E26470C0089DDA3 /* MainInterface.storyboard */; };
+		5C6855431E26470C0089DDA3 /* Bounce.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C6855351E26470C0089DDA3 /* Bounce.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C68554F1E266FFB0089DDA3 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C68554E1E266FFB0089DDA3 /* IntentsUI.framework */; };
+		5C6855531E266FFB0089DDA3 /* IntentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6855521E266FFB0089DDA3 /* IntentViewController.m */; };
+		5C6855561E266FFB0089DDA3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6855541E266FFB0089DDA3 /* MainInterface.storyboard */; };
+		5C68555A1E266FFB0089DDA3 /* Head.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C68554D1E266FFB0089DDA3 /* Head.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5C9315C11E1CD1840062BCE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9315C01E1CD1840062BCE3 /* main.m */; };
 		5C9315C41E1CD1840062BCE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9315C31E1CD1840062BCE3 /* AppDelegate.m */; };
 		5C9315C71E1CD1840062BCE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9315C61E1CD1840062BCE3 /* ViewController.m */; };
@@ -18,6 +28,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5C6855411E26470C0089DDA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C9315B41E1CD1840062BCE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C6855341E26470C0089DDA3;
+			remoteInfo = Bounce;
+		};
+		5C6855581E266FFB0089DDA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C9315B41E1CD1840062BCE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C68554C1E266FFB0089DDA3;
+			remoteInfo = Head;
+		};
 		5C9315D61E1CD1840062BCE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5C9315B41E1CD1840062BCE3 /* Project object */;
@@ -34,7 +58,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C6855471E26470C0089DDA3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5C68555A1E266FFB0089DDA3 /* Head.appex in Embed App Extensions */,
+				5C6855431E26470C0089DDA3 /* Bounce.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5C1DB1421E1FC41300971D0A /* RouletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouletteViewController.h; sourceTree = "<group>"; };
+		5C1DB1431E1FC41300971D0A /* RouletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouletteViewController.m; sourceTree = "<group>"; };
+		5C1DB1481E1FC4E100971D0A /* RouletteWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouletteWheel.h; sourceTree = "<group>"; };
+		5C1DB1491E1FC4E100971D0A /* RouletteWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouletteWheel.m; sourceTree = "<group>"; };
+		5C6855351E26470C0089DDA3 /* Bounce.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Bounce.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6855371E26470C0089DDA3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5C68553A1E26470C0089DDA3 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		5C68553B1E26470C0089DDA3 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		5C68553E1E26470C0089DDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5C6855401E26470C0089DDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C68554D1E266FFB0089DDA3 /* Head.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Head.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C68554E1E266FFB0089DDA3 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		5C6855511E266FFB0089DDA3 /* IntentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentViewController.h; sourceTree = "<group>"; };
+		5C6855521E266FFB0089DDA3 /* IntentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentViewController.m; sourceTree = "<group>"; };
+		5C6855551E266FFB0089DDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5C6855571E266FFB0089DDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C9315BC1E1CD1840062BCE3 /* FbMessagerLike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FbMessagerLike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9315C01E1CD1840062BCE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C9315C21E1CD1840062BCE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +109,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C6855321E26470C0089DDA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6855381E26470C0089DDA3 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C68554A1E266FFB0089DDA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C68554F1E266FFB0089DDA3 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C9315B91E1CD1840062BCE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +149,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C1DB1411E1FC3F900971D0A /* Roulette */ = {
+			isa = PBXGroup;
+			children = (
+				5C1DB1421E1FC41300971D0A /* RouletteViewController.h */,
+				5C1DB1431E1FC41300971D0A /* RouletteViewController.m */,
+				5C1DB1481E1FC4E100971D0A /* RouletteWheel.h */,
+				5C1DB1491E1FC4E100971D0A /* RouletteWheel.m */,
+			);
+			path = Roulette;
+			sourceTree = "<group>";
+		};
+		5C6855361E26470C0089DDA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C6855371E26470C0089DDA3 /* NotificationCenter.framework */,
+				5C68554E1E266FFB0089DDA3 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C6855391E26470C0089DDA3 /* Bounce */ = {
+			isa = PBXGroup;
+			children = (
+				5C68553A1E26470C0089DDA3 /* TodayViewController.h */,
+				5C68553B1E26470C0089DDA3 /* TodayViewController.m */,
+				5C68553D1E26470C0089DDA3 /* MainInterface.storyboard */,
+				5C6855401E26470C0089DDA3 /* Info.plist */,
+			);
+			path = Bounce;
+			sourceTree = "<group>";
+		};
+		5C6855501E266FFB0089DDA3 /* Head */ = {
+			isa = PBXGroup;
+			children = (
+				5C6855511E266FFB0089DDA3 /* IntentViewController.h */,
+				5C6855521E266FFB0089DDA3 /* IntentViewController.m */,
+				5C6855541E266FFB0089DDA3 /* MainInterface.storyboard */,
+				5C6855571E266FFB0089DDA3 /* Info.plist */,
+			);
+			path = Head;
+			sourceTree = "<group>";
+		};
 		5C9315B31E1CD1840062BCE3 = {
 			isa = PBXGroup;
 			children = (
 				5C9315BE1E1CD1840062BCE3 /* FbMessagerLike */,
 				5C9315D81E1CD1840062BCE3 /* FbMessagerLikeTests */,
 				5C9315E31E1CD1840062BCE3 /* FbMessagerLikeUITests */,
+				5C6855391E26470C0089DDA3 /* Bounce */,
+				5C6855501E266FFB0089DDA3 /* Head */,
+				5C6855361E26470C0089DDA3 /* Frameworks */,
 				5C9315BD1E1CD1840062BCE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +210,8 @@
 				5C9315BC1E1CD1840062BCE3 /* FbMessagerLike.app */,
 				5C9315D51E1CD1840062BCE3 /* FbMessagerLikeTests.xctest */,
 				5C9315E01E1CD1840062BCE3 /* FbMessagerLikeUITests.xctest */,
+				5C6855351E26470C0089DDA3 /* Bounce.appex */,
+				5C68554D1E266FFB0089DDA3 /* Head.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +223,7 @@
 				5C9315C31E1CD1840062BCE3 /* AppDelegate.m */,
 				5C9315C51E1CD1840062BCE3 /* ViewController.h */,
 				5C9315C61E1CD1840062BCE3 /* ViewController.m */,
+				5C1DB1411E1FC3F900971D0A /* Roulette */,
 				5C9315C81E1CD1840062BCE3 /* Main.storyboard */,
 				5C9315CB1E1CD1840062BCE3 /* Assets.xcassets */,
 				5C9315CD1E1CD1840062BCE3 /* LaunchScreen.storyboard */,
@@ -143,6 +262,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C6855341E26470C0089DDA3 /* Bounce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C6855461E26470C0089DDA3 /* Build configuration list for PBXNativeTarget "Bounce" */;
+			buildPhases = (
+				5C6855311E26470C0089DDA3 /* Sources */,
+				5C6855321E26470C0089DDA3 /* Frameworks */,
+				5C6855331E26470C0089DDA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bounce;
+			productName = Bounce;
+			productReference = 5C6855351E26470C0089DDA3 /* Bounce.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5C68554C1E266FFB0089DDA3 /* Head */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C68555B1E266FFB0089DDA3 /* Build configuration list for PBXNativeTarget "Head" */;
+			buildPhases = (
+				5C6855491E266FFB0089DDA3 /* Sources */,
+				5C68554A1E266FFB0089DDA3 /* Frameworks */,
+				5C68554B1E266FFB0089DDA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Head;
+			productName = Head;
+			productReference = 5C68554D1E266FFB0089DDA3 /* Head.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5C9315BB1E1CD1840062BCE3 /* FbMessagerLike */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C9315E91E1CD1840062BCE3 /* Build configuration list for PBXNativeTarget "FbMessagerLike" */;
@@ -150,10 +303,13 @@
 				5C9315B81E1CD1840062BCE3 /* Sources */,
 				5C9315B91E1CD1840062BCE3 /* Frameworks */,
 				5C9315BA1E1CD1840062BCE3 /* Resources */,
+				5C6855471E26470C0089DDA3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5C6855421E26470C0089DDA3 /* PBXTargetDependency */,
+				5C6855591E266FFB0089DDA3 /* PBXTargetDependency */,
 			);
 			name = FbMessagerLike;
 			productName = FbMessagerLike;
@@ -205,8 +361,19 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = asdasd;
 				TargetAttributes = {
+					5C6855341E26470C0089DDA3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BK9SLXL3BD;
+						ProvisioningStyle = Automatic;
+					};
+					5C68554C1E266FFB0089DDA3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BK9SLXL3BD;
+						ProvisioningStyle = Automatic;
+					};
 					5C9315BB1E1CD1840062BCE3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BK9SLXL3BD;
 						ProvisioningStyle = Automatic;
 					};
 					5C9315D41E1CD1840062BCE3 = {
@@ -237,11 +404,29 @@
 				5C9315BB1E1CD1840062BCE3 /* FbMessagerLike */,
 				5C9315D41E1CD1840062BCE3 /* FbMessagerLikeTests */,
 				5C9315DF1E1CD1840062BCE3 /* FbMessagerLikeUITests */,
+				5C6855341E26470C0089DDA3 /* Bounce */,
+				5C68554C1E266FFB0089DDA3 /* Head */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C6855331E26470C0089DDA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C68553F1E26470C0089DDA3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C68554B1E266FFB0089DDA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6855561E266FFB0089DDA3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C9315BA1E1CD1840062BCE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,13 +454,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C6855311E26470C0089DDA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C68553C1E26470C0089DDA3 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6855491E266FFB0089DDA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6855531E266FFB0089DDA3 /* IntentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C9315B81E1CD1840062BCE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5C9315C71E1CD1840062BCE3 /* ViewController.m in Sources */,
 				5C9315C41E1CD1840062BCE3 /* AppDelegate.m in Sources */,
+				5C1DB1441E1FC41300971D0A /* RouletteViewController.m in Sources */,
 				5C9315C11E1CD1840062BCE3 /* main.m in Sources */,
+				5C1DB14A1E1FC4E100971D0A /* RouletteWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +501,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5C6855421E26470C0089DDA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C6855341E26470C0089DDA3 /* Bounce */;
+			targetProxy = 5C6855411E26470C0089DDA3 /* PBXContainerItemProxy */;
+		};
+		5C6855591E266FFB0089DDA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C68554C1E266FFB0089DDA3 /* Head */;
+			targetProxy = 5C6855581E266FFB0089DDA3 /* PBXContainerItemProxy */;
+		};
 		5C9315D71E1CD1840062BCE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5C9315BB1E1CD1840062BCE3 /* FbMessagerLike */;
@@ -311,6 +524,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5C68553D1E26470C0089DDA3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C68553E1E26470C0089DDA3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		5C6855541E266FFB0089DDA3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C6855551E266FFB0089DDA3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		5C9315C81E1CD1840062BCE3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -330,6 +559,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C6855441E26470C0089DDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BK9SLXL3BD;
+				INFOPLIST_FILE = Bounce/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.16G.16G.Bounce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5C6855451E26470C0089DDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BK9SLXL3BD;
+				INFOPLIST_FILE = Bounce/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.16G.16G.Bounce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5C68555C1E266FFB0089DDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BK9SLXL3BD;
+				INFOPLIST_FILE = Head/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.16G.16G.Head;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5C68555D1E266FFB0089DDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BK9SLXL3BD;
+				INFOPLIST_FILE = Head/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.16G.16G.Head;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		5C9315E71E1CD1840062BCE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,9 +703,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BK9SLXL3BD;
 				INFOPLIST_FILE = FbMessagerLike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = asdasd.FbMessagerLike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.16G.16G;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,9 +716,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BK9SLXL3BD;
 				INFOPLIST_FILE = FbMessagerLike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = asdasd.FbMessagerLike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.16G.16G;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -491,6 +774,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C6855461E26470C0089DDA3 /* Build configuration list for PBXNativeTarget "Bounce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6855441E26470C0089DDA3 /* Debug */,
+				5C6855451E26470C0089DDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5C68555B1E266FFB0089DDA3 /* Build configuration list for PBXNativeTarget "Head" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C68555C1E266FFB0089DDA3 /* Debug */,
+				5C68555D1E266FFB0089DDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5C9315B71E1CD1840062BCE3 /* Build configuration list for PBXProject "FbMessagerLike" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -507,6 +806,7 @@
 				5C9315EB1E1CD1840062BCE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C9315EC1E1CD1840062BCE3 /* Build configuration list for PBXNativeTarget "FbMessagerLikeTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +815,7 @@
 				5C9315EE1E1CD1840062BCE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C9315EF1E1CD1840062BCE3 /* Build configuration list for PBXNativeTarget "FbMessagerLikeUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +824,7 @@
 				5C9315F11E1CD1840062BCE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
